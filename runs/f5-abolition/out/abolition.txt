@@ -1,0 +1,23 @@
+Linear extrapolation of the balanced-panel annual fog rate, 1990-2024.
+
+nebel: -0.1704 pp/yr, intercept 9.09 -> crosses zero in 2043
+gew:   -0.1321 pp/yr, intercept 9.93 -> crosses zero in 2065
+
+The second line is the price of the first. Nothing in the data distinguishes the two
+extrapolations; they are the same arithmetic on two columns of the same rows. If
+'fog is abolished by 2043' is a finding, then 'thunderstorms are abolished by 2065' is
+the same finding, and it is absurd. A linear fit to a bounded, strictly positive quantity
+has a zero crossing by construction, whatever the data are.
+
+A constant-proportional-decline model on the same points (log-linear, -3.00%/yr)
+fits the observed rates slightly WORSE (R2 on the original scale 0.688 vs 0.728)
+and never reaches zero at all:
+   2030: linear  +2.27%   log-linear  2.89%
+   2043: linear  +0.06%   log-linear  1.94%
+   2050: linear  -1.14%   log-linear  1.57%
+   2070: linear  -4.54%   log-linear  0.85%
+
+The two models are 0.728 vs 0.688 on the same scale -- a difference of 4.0% of the
+variance, which is not a basis on which to prefer either. Both are fitted to the same 35
+numbers. Choosing between them is a choice about what fog is, not a result read off the
+file, and the two disagree about whether the claim in the TASK is true at all.
