@@ -1,0 +1,31 @@
+GeoSphere klima-v2-1d, 10 stations, 1990-2025.
+rows: 131490   station-days with nebel: 109496   with gew: 115872
+
+Every station-day is present as a ROW for all ten stations in all years.
+What changes is whether the row carries a value.
+
+Denominator by period (1990-2024; 2025 excluded, it is a part-period):
+    period nebel_days gew_days nebel_stns gew_stns
+ 1990-1994      18138    18138         10       10
+ 1995-1999      15855    15855         10       10
+ 2000-2004      17814    17814         10       10
+ 2005-2009      16798    16798         10       10
+ 2010-2014      14212    14212          8        8
+ 2015-2019      12631    13362          7        9
+ 2020-2024      11975    16408          7        9
+
+nebel reporting station-days, 1990-1994 -> 2020-2024: 18138 -> 11975  (-34.0%)
+gew   reporting station-days, 1990-1994 -> 2020-2024: 18138 -> 16408  (-9.5%)
+
+The two indicators come off the SAME rows and their denominators diverge. Any rate
+computed over 'rows that reported' is therefore partly a measure of who was reporting.
+
+Stations reporting nebel in EVERY year 1990-2024 (the balanced panel):
+30, 80, 93, 105, 131, 145 
+6 of 10 stations.
+
+Stations that stop reporting nebel, and the last year they do:
+  station 20   last nebel 2007   (still reporting gew through 2025)
+  station 35   last nebel 2007   (still reporting gew through 2007)
+  station 124  gaps, last nebel 2025   (still reporting gew through 2025)
+  station 170  last nebel 2013   (still reporting gew through 2025)
