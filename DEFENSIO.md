@@ -72,7 +72,12 @@ They will plot `gew` beside `nebel` on our own panel, on our own days. They will
 | `nebel` | 8.11% | 3.80% | **-53.2%** | -0.1704 pp/yr |
 | `gew`   | 9.97% | 5.06% | **-49.2%** | -0.1321 pp/yr |
 
-Two indicators off the same rows, falling by nearly the same fraction. Nobody believes aerosol
+Two indicators off the same rows, falling by nearly the same fraction.
+
+(`nebel` reads 3.80% here and 3.87% in §1. Both are ours and both are in the record: §1 is
+`f3-balanced`, pooling all nebel-reporting station-days in the period; this table is `f4-gew`,
+averaging annual rates over the days carrying *both* indicators, which is the only basis on which
+the comparison is fair. 0.07 points. We flag it so nobody has to find it.) Nobody believes aerosol
 cleanup abolishes thunderstorms. A change in how these stations observed — manned to automatic,
 altered coding practice, a national instruction — would produce exactly this, and it would produce
 it in both columns at once.
