@@ -1,0 +1,19 @@
+California M3+, 1970-2025, USGS ComCat.
+
+Events reported with a MOMENT magnitude, per year:
+                Estimate  Std. Error   t value     Pr(>|t|)
+(Intercept) -4649.544942 442.8557205 -10.49901 1.185942e-14
+year            2.347198   0.2216977  10.58738 8.722367e-15
+
+1970-1979 total: 9
+2016-2025 total: 1102
+ratio: 122.4x
+
+ALL events in the same file, per year:
+               Estimate  Std. Error   t value  Pr(>|t|)
+(Intercept) 8304.064252 6208.564991  1.337517 0.1866602
+year          -3.867259    3.108066 -1.244265 0.2187757
+
+1970-1979 total: 5249
+2016-2025 total: 4893
+ratio: 0.93x
