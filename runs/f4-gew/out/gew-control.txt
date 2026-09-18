@@ -1,0 +1,49 @@
+Same six stations, same station-days, both indicators, 1990-2024.
+75708 station-days carry BOTH nebel and gew.
+
+Trend in each indicator, annual rate, OLS:
+  nebel  -0.1704 pp/yr  p = 7.53e-11   8.11% -> 3.80%  (-53.2%)
+  gew    -0.1321 pp/yr  p = 5.17e-06   9.97% -> 5.06%  (-49.2%)
+
+SO: BOTH INDICATORS FALL, AND BY A SIMILAR FRACTION. That is the finding, stated plainly.
+
+Seasonality -- the two indicators are almost disjoint in the calendar:
+ month nebel_pct gew_pct
+     1     11.95    0.76
+     2      6.89    1.18
+     3      4.43    1.98
+     4      1.59    5.24
+     5      1.09   15.05
+     6      0.85   20.68
+     7      0.85   21.30
+     8      1.30   17.30
+     9      4.23    5.56
+    10     12.20    1.48
+    11     16.59    0.58
+    12     12.91    0.84
+
+  nebel: 72.2% of its fog days fall in Oct-Jan
+  gew:   81.1% of its storm days fall in May-Aug
+
+nebel ~ year + gew, i.e. the fog trend with the thunderstorm indicator held constant:
+                Estimate  Std. Error    t value     Pr(>|t|)
+(Intercept) 340.52745672 51.54209749  6.6067831 1.896481e-07
+year         -0.16669236  0.02533176 -6.5803700 2.044962e-07
+gew_pct       0.02835111  0.13175868  0.2151745 8.309968e-01
+
+  year coefficient alone:          -0.1704
+  year coefficient with gew in it: -0.1667  (97.8% of it survives)
+  gew coefficient:                 +0.0284, p = 0.83
+  correlation of the two annual series: r = 0.601
+
+WHAT THIS TEST CAN AND CANNOT DO -- read before quoting it.
+It shows year-to-year thunderstorm variation does not explain year-to-year fog variation.
+It CANNOT separate a common secular decline, because a covariate that trends with year is
+collinear with year and the fit hands the trend to whichever term is in the model. This
+regression could not have come out any other way. It is reported because we ran it, not
+because it settles anything.
+
+Ratio nebel:gew, first five years 0.814, last five years 0.751 (-7.8%).
+If gew is taken as a pure observing-effort proxy, that ratio is what is left of the fog
+decline, and it is small. We do not think gew is a pure effort proxy. Neither reading is
+decidable from this file.
