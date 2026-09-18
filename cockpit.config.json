@@ -1,0 +1,41 @@
+{
+  "repo": {
+    "owner": "kton-protocol",
+    "name": "asif-jam-alpha"
+  },
+  "paths": {
+    "plankton_dir": "registry/plankton",
+    "nekton_dir": "registry/nekton",
+    "templates_dir": "templates",
+    "keys_dir": "keys",
+    "bin_dir": "bin"
+  },
+  "identity": {
+    "session_id": "team",
+    "plankton_key": "keys/team.key",
+    "nekton_key": "keys/team-claims.key"
+  },
+  "verbs": {
+    "publish": true,
+    "say": true,
+    "ask": true
+  },
+  "claims": {
+    "allowedTemplates": [
+      "reproduces",
+      "working-on"
+    ]
+  },
+  "trust": {
+    "tiers": {
+      "self": [
+        "registry/keys/team.pub",
+        "registry/keys/team-claims.pub"
+      ]
+    }
+  },
+  "reproduction": {
+    "requiredLevel": "L0",
+    "normalizer": ""
+  }
+}
