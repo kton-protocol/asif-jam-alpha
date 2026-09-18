@@ -1,0 +1,46 @@
+Balanced panel taken apart, 1990-2024. 'first5'/'last5' are mean annual fog-day rates.
+
+ station first5 last5 pct_chg   slope        p fogdays_1990_1994
+      30   7.94  1.94   -75.5 -0.2163 6.25e-08               145
+      80   7.89  4.27   -45.9 -0.1252 2.26e-03               144
+      93   6.85  4.09   -40.2 -0.1395 5.36e-06               125
+     105   5.26  3.94   -25.1 -0.0396 9.22e-02                96
+     131  15.55  4.05   -73.9 -0.4850 2.58e-11               284
+     145   5.20  4.09   -21.4 -0.0281 3.04e-01                95
+ fogdays_2020_2024 share_of_drop
+                33          22.6
+                78          13.3
+                73          10.5
+                72           4.8
+                70          43.1
+                67           5.6
+
+Every one of the 6 stations declines. Slope is negative in all 6;
+significant at p<0.05 in 4 of 6.
+
+BUT the decline is not evenly spread. Two stations carry most of it:
+  station 131  15.55% ->  4.05%  ( -73.9%)   43.1% of the panel's lost fog days
+  station 30    7.94% ->  1.94%  ( -75.5%)   22.6% of the panel's lost fog days
+  station 80    7.89% ->  4.27%  ( -45.9%)   13.3% of the panel's lost fog days
+  station 93    6.85% ->  4.09%  ( -40.2%)   10.5% of the panel's lost fog days
+  station 145   5.20% ->  4.09%  ( -21.4%)    5.6% of the panel's lost fog days
+  station 105   5.26% ->  3.94%  ( -25.1%)    4.8% of the panel's lost fog days
+
+The top two stations account for 65.7% of the drop in fog days.
+Station 131 alone starts at 15.55%, nearly three times the panel's quietest station,
+and ends indistinguishable from it. A site that changes that much relative to its
+neighbours is as consistent with something changing at the site -- instrument, exposure,
+observer, surroundings -- as with regional climate. This file cannot tell us which.
+
+Leave-one-out: panel trend with each station removed in turn:
+ dropped   slope        p chg_pct
+      30 -0.1624 1.15e-09   -49.5
+      80 -0.1795 9.01e-12   -54.5
+      93 -0.1778 3.77e-10   -55.7
+     105 -0.1968 1.86e-11   -56.7
+     131 -0.1081 3.56e-07   -43.8
+     145 -0.1984 1.32e-11   -56.7
+
+Slope range across the six leave-one-out panels: -0.1984 to -0.1081 (full panel -0.1704).
+The sign and significance survive every deletion. The MAGNITUDE does not: it ranges from
+-56.7% to -43.8% depending on which single station is left out.
