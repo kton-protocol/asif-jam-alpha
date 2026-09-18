@@ -1,0 +1,27 @@
+Balanced panel, GeoSphere klima-v2-1d, 1990-2024.
+stations: 30, 80, 93, 105, 131, 145  (6 of 10)
+station-days: 75708; every one of them carries a nebel value.
+
+Fog days as a percentage of station-days, by five-year period:
+    period fog_pct fog_days denom stations
+ 1990-1994    8.11      889 10956        6
+ 1995-1999    8.86      971 10956        6
+ 2000-2004    6.74      739 10962        6
+ 2005-2009    5.95      652 10956        6
+ 2010-2014    5.91      646 10925        6
+ 2015-2019    3.97      429 10805        6
+ 2020-2024    3.87      393 10148        6
+
+The denominator moves by -7.4% across the whole window (10956 -> 10148 station-days),
+and the panel is the same six stations in every period.
+
+1990-1994 -> 2020-2024:  8.11% -> 3.87%   (-52.3%)
+fog days counted:        889 -> 393          (-55.8%)
+
+Annual trend, OLS on the yearly rate:
+              Estimate  Std. Error   t value     Pr(>|t|)
+(Intercept) 348.260780 36.40706483  9.565747 4.862692e-11
+year         -0.170437  0.01813981 -9.395741 7.529932e-11
+
+slope -0.1704 pp/yr   95% CI [-0.2073, -0.1335]   R2 = 0.728
+over 35 years that is -5.97 percentage points, from a 1990 fitted level of 9.09%.
